@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Teenage AGI</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+<nav>
+<a href="../index.html">Home</a>
+</nav>
+<h1>Teenage AGI</h1>
+</header>
+<main class="container">
+<p>BabyAGI-inspired agent, can recall infinite memory</p>
+<details>
+
+![image](https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png)
+
+### Category
+General purpose
+
+### Description
+A BabyAGI-inspired agent that can recall infinite memory, "thinks" before making action, and doesn't lose memory after being shutting down
+- Model: GPT-4
+- Language: Python
+- Uses OpenAI and Pinecone to give memory to an AI agent and also allows it to "think" before making an action (outputting text)
+- Also, just by shutting down the AI, it doesn't forget its memories since it lives on Pinecone and its memory counter saves the index that it's on
+- A process that happens every time the AI is queried by the user:
+    - AI vectorizes the query and stores it in a Pinecone Vector Database
+    - AI looks inside its memory and finds memories and past queries that are relevant to the current query
+    - AI thinks about what action to take
+    - AI stores the thought from Step 3
+    - Based on the thought from Step 3 and relevant memories from Step 2, AI generates an output
+    - AI stores the current query and its answer in its Pinecone vector database memory
+
+### Links
+- Created by [@sean_pixel](https://twitter.com/sean_pixel)
+- Inspired by paper ["Generative Agents: Interactive Simulacra of Human Behavior"](https://arxiv.org/abs/2304.03442)
+
+</details>
+</main>
+<footer>
+&copy; 2025 Awesome AI Agents
+</footer>
+</body>
+</html>
