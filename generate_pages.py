@@ -1,7 +1,8 @@
 import os, re
 import markdown
 
-readme = open('README.md').read()
+with open('README.md') as f:
+    readme = f.read()
 
 pattern = re.compile(r'^## \[(.*?)\]\((.*?)\)\n(.*?)(?=^## |\Z)', re.S | re.M)
 entries = []
