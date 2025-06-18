@@ -1,0 +1,10 @@
+http:
+  routers:
+    web:
+      rule: Host(`cloudcurio.cc`)
+      service: web
+  services:
+    web:
+      loadBalancer:
+        servers:
+          - url: "http://caddy:80"

@@ -1,0 +1,3 @@
+- Automate the generation process in CI so pages remain up to date with README changes.
+- Consider using a full static site generator (Jekyll, Hugo) for better theming and navigation.
+- Add tests to ensure `generate_pages.py` parses entries correctly when README is updated.

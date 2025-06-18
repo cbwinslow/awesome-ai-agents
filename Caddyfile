@@ -1,0 +1,3 @@
+cloudcurio.cc {
+reverse_proxy localhost:8080
+}
